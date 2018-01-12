@@ -29,7 +29,8 @@ if (answer1 === 'no' || answer1 === 'n'){
     alert('I\'m afraid that is incorrect, ' + user + '. I grew up in Salt Lake City');
 }
 
-alert('You have ' + userPoints + ' points');
+alert('You have ' + userPoints + ' points!');
+console.log(userPoints);
 
 alert('All right, moving along');
 
@@ -44,4 +45,19 @@ if (answer2 === 'yes' || answer2 === 'y'){
     alert('Sorry to say, I\'ve been in banking for 10.5 years')
 }
 
-alert('You have ' + userPoints + ' points');
+alert('You have ' + userPoints + ' points!');
+console.log(userPoints);
+
+alert('On to the next one!')
+
+var answer3 = prompt('Is David\'s favorite baseball team the Seattle Mariners?' , 'yes or no').toLowerCase();
+console.log(answer3);
+
+if (answer3 === 'yes' || answer3 === 'y'){
+    userPoints++;
+    alert('You\'d better believe it.');
+} else {alert('I\'m disappointed you would think that.')
+}
+
+alert('You have ' + userPoints + ' points!');
+console.log(userPoints);
