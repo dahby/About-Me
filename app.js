@@ -30,7 +30,7 @@ if (answer1 === 'no' || answer1 === 'n'){
 }
 
 alert('You have ' + userPoints + ' points!');
-console.log(userPoints);
+console.log(user + ' has a score of ' + userPoints);
 
 alert('All right, moving along');
 
@@ -46,7 +46,7 @@ if (answer2 === 'yes' || answer2 === 'y'){
 }
 
 alert('You have ' + userPoints + ' points!');
-console.log(userPoints);
+console.log(user + ' has a score of ' + userPoints);
 
 alert('On to the next one!')
 
@@ -56,8 +56,24 @@ console.log(answer3);
 if (answer3 === 'yes' || answer3 === 'y'){
     userPoints++;
     alert('You\'d better believe it.');
-} else {alert('I\'m disappointed you would think that.')
+} else {alert('I\'m disappointed that you would think that of me.')
 }
 
 alert('You have ' + userPoints + ' points!');
-console.log(userPoints);
+console.log(user + ' has a score of ' + userPoints);
+
+alert('We\'re almost there!');
+
+var answer4 = prompt('Is there any food that David does not like?' , 'yes or no').toLowerCase();
+console.log(answer4);
+
+if (answer4 === 'yes' || answer4 === 'y'){
+    userPoints++;
+    alert('Correct. While I\ll eat most anything, I really don\'t like beets.');
+} else {alert('It may surprise you, but I REALLY don\'t like beets')
+}
+
+alert('Dwight Schrute and I would not get along')
+
+alert('You have ' + userPoints + ' points!');
+console.log(user + ' has a score of ' + userPoints);
