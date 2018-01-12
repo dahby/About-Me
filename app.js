@@ -2,8 +2,6 @@
 
 var userPoints = 0;
 
-console.log('hello world');
-
 alert('Hello! My name is David and I have crafted a guessing game for us to play!');
 
 var user = prompt('First off, what is your name?')
@@ -14,18 +12,10 @@ var answer1 = prompt('Did David grow up in the Seattle area?' , 'type yes or no 
 console.log('Did David grow up in the Seattle area?');
 console.log(answer1);
 
-//check if the user's answer is correct
-//what is correct?
-//find out what the answer is
-//toLowerCase or toUpperCase
-//use a confirm box
-
 if (answer1 === 'no' || answer1 === 'n'){
-    //if it's correct give them a point
     userPoints++;
     alert('You got it! Born and raised in Utah.');
 } else {
-    //if it's not correct, tell them to try again
     alert('I\'m afraid that is incorrect, ' + user + '. I grew up in Salt Lake City');
 }
 
