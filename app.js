@@ -70,7 +70,7 @@ alert('Dwight Schrute and I would not get along')
 alert('You have ' + userPoints + ' points!');
 console.log(user + ' has a score of ' + userPoints);
 
-alert('You\'ve made it to the last question!');
+alert('Next question!');
 
 var answer5 = prompt('Does David miss having the Sonics in town?' , 'yes or no').toLowerCase();
 console.log('Does David miss having the sonics in town?');
@@ -81,6 +81,33 @@ if (answer5 === 'yes' || answer5 === 'y'){
   alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
 } else {alert('While I was never a Sonics fan, I definitely wish they were still here')
 }
+
+alert('Another question for you');
+
+var answer6 = prompt('How many brothers does David have?', 'Enter a number');
+
+if (answer6 < 3){
+  alert('Sorry, try a higher number');
+} if (answer6 > 3) {
+  alert('Not quite that many');
+} else {
+  alert('Great guess!');
+}
+
+
+
+// var brosNames = ['doug', 'douglas', 'dan', 'daniel', 'darren'];
+
+// var answer7 = prompt('Can you guess one of the names of David\'s siblings?', 'Hint, they all start with D').toLowerCase();
+
+// while (var i = 0; i < brosNames.length, i++) {
+// if (answer7 === brosNames){
+//   alert('You got it!')
+//   else {alert('Nope. Care to try again?')}
+// }
+// }
+
+
 
 alert('You have finished with ' + userPoints + ' points!');
 console.log(user + ' has a score of ' + userPoints);
