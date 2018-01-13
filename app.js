@@ -13,10 +13,10 @@ console.log('Did David grow up in the Seattle area?');
 console.log(answer1);
 
 if (answer1 === 'no' || answer1 === 'n'){
-    userPoints++;
-    alert('You got it! Born and raised in Utah.');
+  userPoints++;
+  alert('You got it! Born and raised in Utah.');
 } else {
-    alert('I\'m afraid that is incorrect, ' + user + '. I grew up in Salt Lake City');
+  alert('I\'m afraid that is incorrect, ' + user + '. I grew up in Salt Lake City');
 }
 
 alert('You have ' + userPoints + ' points!');
@@ -29,10 +29,10 @@ console.log('Does David work in the banking industry?');
 console.log(answer2);
 
 if (answer2 === 'yes' || answer2 === 'y'){
-    userPoints++;
-    alert('Unfortunately, yes, I am a banker');
+  userPoints++;
+  alert('Unfortunately, yes, I am a banker');
 } else {
-    alert('Sorry to say, I\'ve been in banking for 10.5 years')
+  alert('Sorry to say, I\'ve been in banking for 10.5 years')
 }
 
 alert('You have ' + userPoints + ' points!');
@@ -45,8 +45,8 @@ console.log('Is David\'s favorite baseball team the Seattle Mariners?');
 console.log(answer3);
 
 if (answer3 === 'yes' || answer3 === 'y'){
-    userPoints++;
-    alert('You\'d better believe it.');
+  userPoints++;
+  alert('You\'d better believe it.');
 } else {alert('I\'m disappointed that you would think that of me.')
 }
 
@@ -60,8 +60,8 @@ console.log('Is there any food that David does not like?')
 console.log(answer4);
 
 if (answer4 === 'yes' || answer4 === 'y'){
-    userPoints++;
-    alert('Correct. While I\'ll eat most anything, I really don\'t like beets.');
+  userPoints++;
+  alert('Correct. While I\'ll eat most anything, I really don\'t like beets.');
 } else {alert('It may surprise you, but I REALLY don\'t like beets')
 }
 
@@ -77,8 +77,8 @@ console.log('Does David miss having the sonics in town?');
 console.log(answer5);
 
 if (answer5 === 'yes' || answer5 === 'y'){
-    userPoints++;
-    alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
+  userPoints++;
+  alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
 } else {alert('While I was never a Sonics fan, I definitely wish they were still here')
 }
 
