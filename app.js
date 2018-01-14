@@ -84,28 +84,37 @@ if (answer5 === 'yes' || answer5 === 'y'){
 
 alert('Another question for you');
 
-var answer6 = prompt('How many brothers does David have?', 'Enter a number');
+var brothers = 3;
+var wrongAns = true;
 
-if (answer6 < 3){
-  alert('Sorry, try a higher number');
-} if (answer6 > 3) {
-  alert('Not quite that many');
-} else {
-  alert('Great guess!');
+var guess;
+for (var tries = 4; tries > 0 && wrongAns; tries--) {
+  guess = prompt('How many brothers do I have?', 'Enter a number this time');
+  guess = parseInt(guess);
+  if (guess === brothers) {
+    alert('Yep! 3 brothers and no sisters... My poor mother');
+    userPoints++;
+    wrongAns = false;
+  } if (guess < brothers) {
+    alert('More than that');
+  } if (guess > brothers) {
+    alert('Not that many');
+  } if (tries === 1) {
+    alert('Let\'s move on.');
+  }
 }
-
 
 
 // var brosNames = ['doug', 'douglas', 'dan', 'daniel', 'darren'];
 
 // var answer7 = prompt('Can you guess one of the names of David\'s siblings?', 'Hint, they all start with D').toLowerCase();
 
-// while (var i = 0; i < brosNames.length, i++) {
+// while (var i = 0; i < brosNames.length, i++); {
 // if (answer7 === brosNames){
-//   alert('You got it!')
+//   alert('You got it!');}
 //   else {alert('Nope. Care to try again?')}
 // }
-// }
+
 
 
 
