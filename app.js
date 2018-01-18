@@ -112,22 +112,25 @@ alert('Last question, I promise!');
 
 var brosNames = ['doug', 'douglas', 'dan', 'daniel', 'darren'];
 var wrongName = true;
+var tries2 = 0;
 
-var answer7;
-for (var tries2 = 6; tries2 > 0 && wrongName; tries2--) {
-  answer7 = prompt('Can you guess the name of any of my brothers?', 'Hint: We all start with D').toLowerCase();
+while (tries2 < 6 && wrongName === true) {
+  var answer7 = prompt('Can you guess the name of any of my brothers?', 'Hint: We all start with D').toLowerCase();
   console.log('What are my brothers names?');
   console.log(answer7);
+
   for (var i = 0; i < brosNames.length; i++) {
     console.log(brosNames[i]);
-    if(answer7 === brosNames[i])
-      alert('Great guess! You got it!');
-    userPoints++;
-    wrongName = false;
-  } if (tries2 === 1) {
-    alert('You gave a good effort, but let\'s finish up.');
-  } else {
-    alert('That\'s incorrect. Try again!');
+
+    if (brosNames[i].toLowerCase() === answer7){
+      userPoints++;
+      wrongName = false;
+      alert('Great guess! In order from older to youngest, it\'s Doug, Dan, David, and then Darren');
+    }
+  }
+  if (wrongName === true) {
+    tries2++;
+    alert ('Nope! Guess again!');
   }
 }
 
