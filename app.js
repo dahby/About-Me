@@ -19,7 +19,7 @@ if (answer1 === 'no' || answer1 === 'n'){
   alert('I\'m afraid that is incorrect, ' + user + '. I grew up in Salt Lake City');
 }
 
-alert('You have ' + userPoints + ' points!');
+alert('You have ' + userPoints + ' point!');
 console.log(user + ' has a score of ' + userPoints);
 
 alert('All right, moving along');
@@ -120,8 +120,8 @@ for (var tries2 = 6; tries2 > 0 && wrongName; tries2--) {
   console.log(answer7);
   for (var i = 0; i < brosNames.length; i++) {
     console.log(brosNames[i]);
-    if(answer7 === brosNames[i]);
-    alert('Great guess! You got it!');
+    if(answer7 === brosNames[i])
+      alert('Great guess! You got it!');
     userPoints++;
     wrongName = false;
   } if (tries2 === 1) {
