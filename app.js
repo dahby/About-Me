@@ -79,7 +79,7 @@ console.log(answer5);
 if (answer5 === 'yes' || answer5 === 'y'){
   userPoints++;
   alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
-} else {alert('While I was never a Sonics fan, I definitely wish they were still here')
+} else {alert('While I was never a Sonics fan, I definitely wish they were still here');
 }
 
 alert('Another question for you');
