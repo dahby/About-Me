@@ -47,11 +47,11 @@ question2();
 alert('On to the next one!');
 
 function question3() {
-  var answer3 = prompt('Is David\'s favorite baseball team the Seattle Mariners?' , 'yes or no').toLowerCase();
+  var answer = prompt('Is David\'s favorite baseball team the Seattle Mariners?' , 'yes or no').toLowerCase();
   console.log('Is David\'s favorite baseball team the Seattle Mariners?');
-  console.log(answer3);
+  console.log(answer);
 
-  if (answer3 === 'yes' || answer3 === 'y'){
+  if (answer === 'yes' || answer === 'y'){
     userPoints++;
     alert('You\'d better believe it.');
   } else {alert('I\'m disappointed that you would think that of me.');
@@ -62,58 +62,66 @@ question3();
 alert('You have ' + userPoints + ' points!');
 console.log(user + ' has a score of ' + userPoints);
 
-// alert('We\'re almost there!');
+alert('We\'re almost there!');
 
-// var answer4 = prompt('Is there any food that David does not like?' , 'yes or no').toLowerCase();
-// console.log('Is there any food that David does not like?');
-// console.log(answer4);
+function question4() {
+  var answer = prompt('Is there any food that David does not like?' , 'yes or no').toLowerCase();
+  console.log('Is there any food that David does not like?');
+  console.log(answer);
 
-// if (answer4 === 'yes' || answer4 === 'y'){
-//   userPoints++;
-//   alert('Correct. While I\'ll eat most anything, I really don\'t like beets.');
-// } else {alert('It may surprise you, but I REALLY don\'t like beets');
-// }
+  if (answer === 'yes' || answer === 'y'){
+    userPoints++;
+    alert('Correct. While I\'ll eat most anything, I really don\'t like beets.');
+  } else {alert('It may surprise you, but I REALLY don\'t like beets');
+  }
 
-// alert('Dwight Schrute and I would not get along');
+  alert('Dwight Schrute and I would not get along');
+}
+question4();
 
-// alert('You have ' + userPoints + ' points!');
-// console.log(user + ' has a score of ' + userPoints);
+alert('You have ' + userPoints + ' points!');
+console.log(user + ' has a score of ' + userPoints);
 
-// alert('Next question!');
+alert('Next question!');
 
-// var answer5 = prompt('Does David miss having the Sonics in town?' , 'yes or no').toLowerCase();
-// console.log('Does David miss having the sonics in town?');
-// console.log(answer5);
+function question5() {
+  var answer = prompt('Does David miss having the Sonics in town?' , 'yes or no').toLowerCase();
+  console.log('Does David miss having the sonics in town?');
+  console.log(answer);
 
-// if (answer5 === 'yes' || answer5 === 'y'){
-//   userPoints++;
-//   alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
-// } else {alert('While I was never a Sonics fan, I definitely wish they were still here');
-// }
+  if (answer === 'yes' || answer === 'y'){
+    userPoints++;
+    alert('Definitely. I\'d love to watch the Utah Jazz play up here a few times a year.');
+  } else {alert('While I was never a Sonics fan, I definitely wish they were still here');
+  }
+}
+question5();
 
-// alert('Another question for you');
+alert('Another question for you');
 
-// var brothers = 3;
-// var wrongAns = true;
-
-// var answer6;
-// for (var tries = 4; tries > 0 && wrongAns; tries--) {
-//   answer6 = prompt('How many brothers do I have?', 'Enter a number this time');
-//   answer6 = parseInt(answer6);
-//   console.log('How many brothers does David have?');
-//   console.log(answer6);
-//   if (answer6 === brothers) {
-//     alert('Yep! 3 brothers and no sisters... My poor mother');
-//     userPoints++;
-//     wrongAns = false;
-//   } if (answer6 < brothers) {
-//     alert('More than that');
-//   } if (answer6 > brothers) {
-//     alert('Not that many');
-//   } if (tries === 1) {
-//     alert('Let\'s move on.');
-//   }
-// }
+function question6() {
+  var brothers = 3;
+  var wrongAns = true;
+  var answer;
+  for (var tries = 4; tries > 0 && wrongAns; tries--) {
+    answer = prompt('How many brothers do I have?', 'Enter a number this time');
+    answer = parseInt(answer);
+    console.log('How many brothers does David have?');
+    console.log(answer);
+    if (answer === brothers) {
+      alert('Yep! 3 brothers and no sisters... My poor mother');
+      userPoints++;
+      wrongAns = false;
+    } if (answer < brothers) {
+      alert('More than that');
+    } if (answer > brothers) {
+      alert('Not that many');
+    } if (tries === 1) {
+      alert('Let\'s move on.');
+    }
+  }
+}
+question6();
 
 // alert('You have ' + userPoints + ' points!');
 // console.log(user + ' has a score of ' + userPoints);
