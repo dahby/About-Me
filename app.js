@@ -123,36 +123,39 @@ function question6() {
 }
 question6();
 
-// alert('You have ' + userPoints + ' points!');
-// console.log(user + ' has a score of ' + userPoints);
-// alert('Last question, I promise!');
+alert('You have ' + userPoints + ' points!');
+console.log(user + ' has a score of ' + userPoints);
+alert('Last question, I promise!');
 
-// var brosNames = ['doug', 'douglas', 'dan', 'daniel', 'darren'];
-// var wrongName = true;
-// var tries2 = 0;
+function question7() {
+  var brosNames = ['doug', 'douglas', 'dan', 'daniel', 'darren'];
+  var wrongName = true;
+  var tries = 0;
 
-// while (tries2 < 6 && wrongName === true) {
-//   var answer7 = prompt('Can you guess the name of any of my brothers?', 'Hint: We all start with D').toLowerCase();
-//   console.log('What are my brothers names?');
-//   console.log(answer7);
+  while (tries < 6 && wrongName === true) {
+    var answer = prompt('Can you guess the name of any of my brothers?', 'Hint: We all start with D').toLowerCase();
+    console.log('What are my brothers names?');
+    console.log(answer);
 
-//   for (var i = 0; i < brosNames.length; i++) {
-//     console.log(brosNames[i]);
+    for (var i = 0; i < brosNames.length; i++) {
+      console.log(brosNames[i]);
 
-//     if (brosNames[i].toLowerCase() === answer7){
-//       userPoints++;
-//       wrongName = false;
-//       alert('Great guess! In order from older to youngest, it\'s Doug, Dan, David, and then Darren');
-//     }
-//   }
-//   if (wrongName === true) {
-//     tries2++;
-//     alert ('Nope! Guess again!');
-//   }
-// }
+      if (brosNames[i].toLowerCase() === answer){
+        userPoints++;
+        wrongName = false;
+        alert('Great guess! In order from older to youngest, it\'s Doug, Dan, David, and then Darren');
+      }
+    }
+    if (wrongName === true) {
+      tries++;
+      alert ('Nope! Guess again!');
+    }
+  }
+}
+question7();
 
-// alert('You have finished with ' + userPoints + ' out of a possible 7 points!');
-// console.log(user + ' has a score of ' + userPoints);
+alert('You have finished with ' + userPoints + ' out of a possible 7 points!');
+console.log(user + ' has a score of ' + userPoints);
 
 alert('Congrats! You\'ve made it to the end.');
 alert('As your reward, enjoy some very simplistic CSS design!');
