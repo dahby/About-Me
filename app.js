@@ -27,34 +27,40 @@ question1();
 
 alert('All right, moving along');
 
-// var answer2 = prompt('Does David work in the banking industry?' , 'again, yes or no').toLowerCase();
-// console.log('Does David work in the banking industry?');
-// console.log(answer2);
+function question2() {
+  var answer = prompt('Does David work in the banking industry?' , 'again, yes or no').toLowerCase();
+  console.log('Does David work in the banking industry?');
+  console.log(answer);
 
-// if (answer2 === 'yes' || answer2 === 'y'){
-//   userPoints++;
-//   alert('Unfortunately, yes, I am a banker');
-// } else {
-//   alert('Sorry to say, I\'ve been in banking for 10.5 years');
-// }
+  if (answer === 'yes' || answer === 'y'){
+    userPoints++;
+    alert('Unfortunately, yes, I am a banker');
+  } else {
+    alert('Sorry to say, I\'ve been in banking for 10.5 years');
+  }
 
-// alert('You have ' + userPoints + ' points!');
-// console.log(user + ' has a score of ' + userPoints);
+  alert('You have ' + userPoints + ' points!');
+  console.log(user + ' has a score of ' + userPoints);
+}
+question2();
 
-// alert('On to the next one!');
+alert('On to the next one!');
 
-// var answer3 = prompt('Is David\'s favorite baseball team the Seattle Mariners?' , 'yes or no').toLowerCase();
-// console.log('Is David\'s favorite baseball team the Seattle Mariners?');
-// console.log(answer3);
+function question3() {
+  var answer3 = prompt('Is David\'s favorite baseball team the Seattle Mariners?' , 'yes or no').toLowerCase();
+  console.log('Is David\'s favorite baseball team the Seattle Mariners?');
+  console.log(answer3);
 
-// if (answer3 === 'yes' || answer3 === 'y'){
-//   userPoints++;
-//   alert('You\'d better believe it.');
-// } else {alert('I\'m disappointed that you would think that of me.');
-// }
+  if (answer3 === 'yes' || answer3 === 'y'){
+    userPoints++;
+    alert('You\'d better believe it.');
+  } else {alert('I\'m disappointed that you would think that of me.');
+  }
+}
+question3();
 
-// alert('You have ' + userPoints + ' points!');
-// console.log(user + ' has a score of ' + userPoints);
+alert('You have ' + userPoints + ' points!');
+console.log(user + ' has a score of ' + userPoints);
 
 // alert('We\'re almost there!');
 
