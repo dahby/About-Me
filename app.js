@@ -29,8 +29,15 @@ function questionYN( q, correctAns, goodJob, oops) {
   console.log(user + ' has a score of ' + userPoints);
 }
 questionYN('Did David grow up in the Seattle area?', false, 'You\'re right I grew up in Utah!', 'Nope, definitely not!');
-
 alert('All right, moving along');
+questionYN('Does David work in the banking industry?', true, 'Unfortunately, yes, I am a banker', 'Sorry to say, I\'ve been in banking for 10.5 years');
+alert('On to the next one!');
+questionYN('Is David\'s favorite baseball team the Seattle Mariners?', true, 'You\'d better believe it.', 'I\'m disappointed that you would think that of me.');
+alert('On to the next one!');
+questionYN('Is there any food that David does not like?', true, 'I\'ll eat most anything but I do not like beets', 'It may surprise you but I REALLY DON\'T LIKE BEETS');
+alert('Another question for you');
+questionYN('Does David miss having the Sonics in town?', true, 'Yes I would like to watch them play the Utah Jazz.', 'I was never a Sonics fan but I wish they were still here.');
+alert('Next question!');
 
 // function question2() {
 //   var answer = prompt('Does David work in the banking industry?' , 'again, yes or no').toLowerCase();
