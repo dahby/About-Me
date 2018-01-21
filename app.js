@@ -16,14 +16,14 @@ function questionYN( q, correctAns, goodJob, oops) {
   if (correctAns === false && (input === 'no' || input === 'n')) {
     userPoints++;
     alert(goodJob);
-    alert('You have ' + userPoints + ' point!');
+    alert('You have ' + userPoints + ' points!');
   } else if (correctAns === true && (input === 'yes' || input === 'y')) {
     userPoints++;
     alert(goodJob);
-    alert('You have ' + userPoints + ' point!');
+    alert('You have ' + userPoints + ' points!');
   } else {
     alert(oops);
-    alert('You have ' + userPoints + ' point!');
+    alert('You have ' + userPoints + ' points!');
   }
   console.log(user + ' has a score of ' + userPoints);
 }
@@ -40,7 +40,7 @@ alert('On to the next one!');
 questionYN('Is there any food that David does not like?', true, 'I\'ll eat most anything but I do not like beets', 'It may surprise you but I REALLY DON\'T LIKE BEETS');
 alert('Another question for you');
 
-questionYN('Does David miss having the Sonics in town?', true, 'Yes I would like to watch them play the Utah Jazz.', 'I was never a Sonics fan but I wish they were still here.');
+questionYN('Does David miss having the Sonics in town?', true, 'Yes, I would like to watch them play the Utah Jazz.', 'I was never a Sonics fan but I wish they were still here.');
 alert('Next question!');
 
 function question6() {
